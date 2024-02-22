@@ -1,16 +1,16 @@
 /* Global */
 :root {
     /* App Colors */
-    --color-primary: var(--color-black);
+    --color-primary: var(--color-white);
     --color-primary-variant: var(--color-gray);
     --color-accent: var(--color-blue);
     --color-accent-variant: var(--color-orange);
-    --color-text: var(--color-white);
+    --color-text: var(--color-black);
 
     /* Colors */
-    --color-white: #ffffff;
-    --color-black: #050a13;
-    --color-blue: #03e8f9;
+    --color-white: white;
+    --color-black: black;
+    --color-blue: #00b8ad;
     --color-orange: #fd6413;
     --color-gray: #1b1e26;
 }
@@ -90,6 +90,8 @@ button:focus {
 
 .header__menu__item.active {
     border: 1px solid var(--color-accent);
+    background-color: var(--color-accent);
+    color: var(--color-white);
     border-radius: 4px;
 }
 
@@ -103,10 +105,10 @@ button:focus {
 }
 
 .home__img {
-    width: 250px;
-    height: 250px;
+    width: 800px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 100%;
+    border-radius: 4px;
     border: 3px solid var(--color-accent);
 }
 
@@ -121,6 +123,12 @@ button:focus {
 
 .home__description {
     font-size: 1.3rem;
+}
+
+.home__ikon {
+    display: flex;
+    margin: 2rem;
+    padding: 0.5rem 1rem;
 }
 
 .home__contact {
